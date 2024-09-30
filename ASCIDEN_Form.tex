@@ -103,7 +103,15 @@ Descripción de los datos a utilizar.
 
 \metodos{
 
-Descripción de los métodos a utilizar.
+Se buscará crear redes neuronales convolucionales (CNN) para detectar las nubes de polvo y estrellas próximas a colisionar. \\
+Una vez detectados se medirán los siguientes factores de cada cuerpo antes y después del choque con el fin de conocer las transferencias de energía:\\
+\begin{itemize}
+\item Temperatura: Para medir la temperatura se deberá tomar en cuenta los colores de cada objeto. Gracias a las imágenes obtenidas podemos realizar una espectroscopía, lo que nos indicará sus líneas de emisión.\\
+\item Masa: El análisis de las líneas de emisión nos dará indicios de los componentes de los objetos. Además, las CNN pueden reconocer estructuras para estimar el volumen y así tener una percepción de la densidad del objeto. Con esto podemos analizar las posibles pérdidas de masa ocurridas luego del choque. \\
+\item Velocidad: Medir la velocidad de cada objeto, ya sea traslacional o angular, nos entrega información relevante para medir el momentum de los objetos, lo que explicará las estructuras resultantes de estas colisiones.\\
+\item Luminosidad: La luminosidad es un aspecto fundamental por medir en este tipo de objetos, ya que directamente nos indica la energía por tiempo de cada objeto. Se debe utilizar fotometría para este tipo de indicadores, por lo que se deberán aplicar filtros fotométricos para las imágenes. Además, debemos de tener en cuenta la distancia a la que se encuentra del observador, ya que su brillo disminuye con el cuadrado de esta.\\
+\end{itemize}
+
  
 }
 
